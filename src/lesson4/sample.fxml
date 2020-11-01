@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<GridPane fx:id="pane" alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="lesson4.Controller">
+    <stylesheets>
+        <URL value="@/lesson4/style.css" />
+    </stylesheets>
+<MenuBar fx:id="menuBar" GridPane.columnIndex="0" GridPane.rowIndex="0">
+    <Menu fx:id="menu" text="Style">
+        <MenuItem  text = "Dark" onAction="#clickDark" />
+        <MenuItem  onAction="#clickOrigin" text="Origin" />
+    </Menu>
+</MenuBar>
+    <Button fx:id="send" onAction="#clickSend" text="send" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+    <TextArea fx:id="area" prefHeight="400" prefWidth="350" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField fx:id="field" onAction="#clickSend" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+
+</GridPane>

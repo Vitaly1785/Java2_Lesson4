@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="lesson4_1.Controller">
+    <stylesheets>
+        <URL value="@/lesson4_1/style.css" />
+    </stylesheets>
+<Label text = "Выберите параметры" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+
+
+
+<MenuBar GridPane.columnIndex="0" GridPane.rowIndex="1">
+    <Menu fx:id="menuFactor" text = "Мощность">
+        <MenuItem fx:id="menu100" text = "до 100 л.с." onAction="#menu100"/>
+        <MenuItem fx:id="menu125" text = "от 100  до 125 л.с." onAction="#menu125"/>
+        <MenuItem fx:id="menu150" text = "от 125 до 150 л.с." onAction="#menu150"/>
+        <MenuItem fx:id="menu175" text = "от 150 до 175 л.с." onAction="#menu175"/>
+        <MenuItem fx:id="menu200" text = "от 175 до 200 л.с." onAction="#menu200"/>
+        <MenuItem fx:id="menu225" text = "от 200 до 225 л.с." onAction="#menu225"/>
+        <MenuItem fx:id="menu250" text = "от 225 до 250 л.с." onAction="#menu250"/>
+        <MenuItem fx:id="menu251" text = "свыше 250 л.с." onAction="#menu251"/>
+    </Menu>
+</MenuBar>
+    <MenuBar GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Menu fx:id="menuMonths" text = "Кол-во месяцев владения">
+            <MenuItem fx:id="month1" text = "1 месяц" onAction="#menu1"/>
+            <MenuItem fx:id="month2" text = "2 месяца" onAction="#menu2"/>
+            <MenuItem fx:id="month3" text = "3 месяца" onAction="#menu3"/>
+            <MenuItem fx:id="month4" text = "4 месяца" onAction="#menu4"/>
+            <MenuItem fx:id="month5" text = "5 месяцев" onAction="#menu5"/>
+            <MenuItem fx:id="month6" text = "6 месяцев" onAction="#menu6"/>
+            <MenuItem fx:id="month7" text = "7 месяцев" onAction="#menu7"/>
+            <MenuItem fx:id="month8" text = "8 месяцев" onAction="#menu8"/>
+            <MenuItem fx:id="month9" text = "9 месяцев" onAction="#menu9"/>
+            <MenuItem fx:id="month10" text = "10 месяцев" onAction="#menu10"/>
+            <MenuItem fx:id="month11" text = "11 месяцев" onAction="#menu11"/>
+            <MenuItem fx:id="month12" text = "12 месяцев" onAction="#menu12"/>
+        </Menu>
+    </MenuBar>
+<Label text = "Введите количество л.с." GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+<TextField fx:id="field"  GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#clickBtn"/>
+<Button text = "Рассчитать" GridPane.columnIndex="1" GridPane.rowIndex="3"  onAction="#clickBtn"/>
+<Label fx:id="labelResult"  GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+
+
+</GridPane>
